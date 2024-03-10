@@ -22,12 +22,12 @@ int is_to_close()
     unsigned int converted_uS = uS / US_ROUNDTRIP_CM;
     Serial.print(converted_uS); // US_ROUNDTRIP_CM def in library as 57 (microsec takes to travel 1cm)
     Serial.println("cm");
-    if (converted_uS < STOP_DISTANCE)
+    if (converted_uS < STOP_DISTANCE && converted_uS > 0)
     {
-        return 1;   // TOO CLOSE
+        return 1; // TOO CLOSE
     }
     else
     {
-        return 0;  // FAR ENOUGH
+        return 0; // FAR ENOUGH
     }
 }
