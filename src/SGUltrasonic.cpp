@@ -5,6 +5,7 @@
 
 #define MAX_DISTANCE 200
 
+NewPing sonar(TRIGGER_PIN, ECHO_PIN, MAX_DISTANCE);
 
 /*If the rover is too close to something this function returns 1, if it's far enough away it returns 0 */
 
