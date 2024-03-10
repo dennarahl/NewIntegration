@@ -2,8 +2,8 @@
 #define NostromoPinsAndGlobals_h
 // PIN DEFINITIONS
 
-#define TRIGGER_PIN 13
-#define ECHO_PIN 14
+#define TRIGGER_PIN 5
+#define ECHO_PIN 18
 
 // GLOBAL DEFINITIONS
 
